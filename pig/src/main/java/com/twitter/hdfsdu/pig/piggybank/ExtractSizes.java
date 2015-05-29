@@ -39,7 +39,7 @@ public class ExtractSizes extends EvalFunc<DataBag> {
 		// verify input
 		if (input == null) {
 			if (reporter != null) {
-				reporter.getCounter(counters.WRONG_INPUT).increment(1);
+				reporter.incrCounter(counters.WRONG_INPUT, 1);
 			}
 			return null;
 		}
